@@ -14,7 +14,8 @@
 
 import time
 
-print("Welcome to the Stress, Strain, and Young's Modulus Calculator. \n Please enter any values in numerical form only, as inputting letters or special characters will cause an error.")
+print("Welcome to the Stress, Strain, and Young's Modulus Calculator.")
+print("Please enter any values in numerical form only, as inputting letters or special characters will cause an error.")
 time.sleep(1)
 print("Have fun!")
 time.sleep(2)
