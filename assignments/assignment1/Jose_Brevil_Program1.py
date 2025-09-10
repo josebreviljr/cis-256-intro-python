@@ -1,7 +1,7 @@
 """
     Name: Jose F. Brevil, Jr.
     Student ID: 011064137
-    Submission Date: 09.08.25
+    Submission Date: 09.09.25
     Program: Assignment 1
     Sources Consulted: Runestone Academy - How to Think Like a Computer Scientist: Interactive Edition, CIS 256 Week 3 Slides
 
