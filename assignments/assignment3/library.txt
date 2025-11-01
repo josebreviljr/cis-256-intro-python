@@ -1,0 +1,50 @@
+The Great Gatsby::12
+To Kill a Mockingbird::8
+1984::15
+Pride and Prejudice::10
+Their Eyes Were Watching God::9
+The Color Purple::7
+Things Fall Apart::14
+Beloved::6
+The Joy Luck Club::10
+Native Son::8
+The House on Mango Street::11
+Americanah::9
+The Kite Runner::13
+Ceremony::5
+I Know Why the Caged Bird Sings::12
+The Hate U Give::15
+Invisible Man::10
+Homegoing::7
+Between the World and Me::9
+Parable of the Sower::8
+The Namesake::6
+The Brief Wondrous Life of Oscar Wao::10
+Sing, Unburied, Sing::5
+There There::8
+Born a Crime::12
+The Underground Railroad::10
+White Teeth::7
+A Thousand Splendid Suns::14
+Persepolis::6
+The God of Small Things::9
+Half of a Yellow Sun::10
+A Bend in the River::8
+Interpreter of Maladies::11
+No-No Boy::5
+Salvage the Bones::7
+We Need New Names::9
+An American Marriage::10
+Girl, Woman, Other::12
+The Lowland::8
+The Sympathizer::11
+Behold the Dreamers::10
+The Vanishing Half::9
+Pachinko::14
+Transcendent Kingdom::6
+Such a Fun Age::8
+Queenie::10
+On Earth We're Briefly Gorgeous::7
+A Man Called Ove::13
+The Night Tiger::5
+The Mountains Sing::9
