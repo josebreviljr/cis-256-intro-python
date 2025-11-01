@@ -44,10 +44,10 @@ def main():
         if user_choice == "d":
             view_logs()
         if user_choice == "e":
+            print("\nThank you for using this system.")
+            sleep(.5)
             return False
         exit
-    
-
 
 def load_library():
     try:
@@ -83,7 +83,90 @@ def view_library():
     except FileNotFoundError:
         print("Library file not found.")
 
-          
+def checkout_book():
+    book_to_checkout = input("\nEnter the title of the book you want to check out: ").strip()
+
+    try:
+        with open("library.txt", "r") as file:
+            books = file.readlines()
+    except FileNotFoundError:
+        print("Library file not found.")
+        return
+
+    found = False
+    updated_books = []
+
+    for line in books:
+        title, copies = line.strip().split("::")
+        copies = int(copies)
+        if title.lower() == book_to_checkout.lower():
+            found = True
+            if copies > 0:
+                copies -= 1
+                print(f"Successfully checked out '{title}'. Enjoy reading!")
+                log_action(f"Checked out '{title}'")
+            else:
+                print(f"Sorry, '{title}' is currently not available.")
+        updated_books.append(f"{title}::{copies}\n")
+
+    if not found:
+        print(f"Book '{book_to_checkout}' not found in the library.")
+
+    with open("library.txt", "w") as file:
+        file.writelines(updated_books)
+
+
+def log_action(action):
+    timestamp = dt.datetime.now().isoformat(sep=" ", timespec="seconds")
+    with open("checkout_log.txt", "a") as log_file:
+        log_file.write(f"{timestamp} - {action}\n")
+
+
+def return_book():
+    book_to_return = input("\nEnter the title of the book you want to return: ").strip()
+
+    try:
+        with open("library.txt", "r") as file:
+            books = file.readlines()
+    except FileNotFoundError:
+        print("Library file not found.")
+        return
+
+    found = False
+    updated_books = []
+
+    for line in books:
+        title, copies = line.strip().split("::")
+        copies = int(copies)
+        if title.lower() == book_to_return.lower():
+            found = True
+            copies += 1
+            print(f"Successfully returned '{title}'. Thank you!")
+            log_action(f"Returned '{title}'")
+        updated_books.append(f"{title}::{copies}\n")
+
+    if not found:
+        print(f"Book '{book_to_return}' not found in the library.")
+
+    with open("library.txt", "w") as file:
+        file.writelines(updated_books)
+
+
+def view_logs():
+    sleep(.5)
+    try:
+        with open("checkout_log.txt", "r") as log_file:
+            logs = log_file.readlines()
+            if not logs:
+                print("\nNo checkout or return logs available yet.\n")
+                return
+            print("\nLibrary Checkout/Return Logs:")
+            print("-" * 50)
+            for line in logs:
+                print(line.strip())
+            print("-" * 50, "\n")
+    except FileNotFoundError:
+        print("\nNo checkout logs found. No books have been checked out or returned yet.\n")
 
         
 
