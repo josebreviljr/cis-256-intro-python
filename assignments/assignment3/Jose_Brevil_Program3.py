@@ -103,7 +103,7 @@ def checkout_book():
             found = True
             if copies > 0:
                 copies -= 1
-                print(f"Successfully checked out '{title}'. Enjoy reading!")
+                print(f"Successfully checked out '{title}'. Enjoy!")
                 log_action(f"Checked out '{title}'")
             else:
                 print(f"Sorry, '{title}' is currently not available.")
@@ -158,15 +158,16 @@ def view_logs():
         with open("checkout_log.txt", "r") as log_file:
             logs = log_file.readlines()
             if not logs:
-                print("\nNo checkout or return logs available yet.\n")
+                print("\nNo checkout or return logs available yet.")
                 return
             print("\nLibrary Checkout/Return Logs:")
             print("-" * 50)
+
             for line in logs:
                 print(line.strip())
             print("-" * 50, "\n")
     except FileNotFoundError:
-        print("\nNo checkout logs found. No books have been checked out or returned yet.\n")
+        print("\nNo checkout logs found. No books have been checked out or returned yet")
 
         
 
