@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:-//Ole Miss//PULSE Ignite Leadership Conference//EN
+
+BEGIN:VEVENT
+UID:pulseignite-2026-day1@olemiss.edu
+DTSTAMP:20251120T200000Z
+DTSTART:20260130T220000Z
+DTEND:20260131T010000Z
+SUMMARY:2026 PULSE/Ignite Leadership Conference — Day 1
+LOCATION:Gertrude C. Ford Ole Miss Student Union Ballroom, University of Mississippi
+DESCRIPTION:Day 1 of the 2026 PULSE/Ignite Leadership Conference hosted by the Ole Miss Women’s Council in collaboration with the Sullivan Foundation. Focus on leadership development, purpose-driven impact, and personal growth. Dinner provided. Professional headshots available.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:pulseignite-2026-day2@olemiss.edu
+DTSTAMP:20251120T200000Z
+DTSTART:20260131T143000Z
+DTEND:20260131T191500Z
+SUMMARY:2026 PULSE/Ignite Leadership Conference — Day 2
+LOCATION:Gertrude C. Ford Ole Miss Student Union Ballroom, University of Mississippi
+DESCRIPTION:Day 2 of the 2026 PULSE/Ignite Leadership Conference. Breakfast and lunch provided. Stay for raffle prizes and closing sessions. Professional headshots available.
+END:VEVENT
+
+END:VCALENDAR

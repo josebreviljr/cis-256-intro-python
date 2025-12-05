@@ -169,13 +169,6 @@ def view_logs():
     except FileNotFoundError:
         print("\nNo checkout logs found. No books have been checked out or returned yet")
 
-        
-
-
-
-
-
-
 
 if __name__ == "__main__":
         main()
